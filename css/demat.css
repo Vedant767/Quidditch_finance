@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* body {
+  padding: 24px;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+} */
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.container_demat{
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.table {
+  width: 100%;
+  border: 1px solid #EEEEEE;
+}
+
+.table-header {
+  display: flex;
+  width: 100%;
+  background: #000;
+  padding: 18px 0;
+}
+
+.table-row {
+  display: flex;
+  width: 100%;
+  padding: 25px 0;
+}
+.table-row:nth-of-type(odd) {
+  background: #EEEEEE;
+}
+
+.table-data, .header__item {
+  flex: 1 1 20%;
+  text-align: center;
+}
+
+.header__item {
+  text-transform: uppercase;
+}
+
+.filter__link {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.filter__link::after {
+  content: "";
+  position: absolute;
+  right: -18px;
+  color: white;
+  font-size: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.filter__link.desc::after {
+  content: "(desc)";
+}
+.filter__link.asc::after {
+  content: "(asc)";
+}
+
+.title_of_table{
+    align-items: center;
+    padding-left: 43%;
+    color: black;
+}
+
+#demate_logo{
+  padding-left: 140px;
+  width: 900px;
+  height: 500px;
+}
+
+@media (max-width: 768px) {
+#demate_logo{
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 60px;
+  width: 500px;
+  height: 200px;
+}
+}
+
+
+
+
+
+.tabs {
+	position: relative;
+	display: flex;
+	min-height: 350px;
+	border-radius: 8px 8px 0 0;
+	overflow: hidden;
+}
+
+.tabby-tab {
+	flex: 1;
+}
+
+#cont_upstox{
+  position: relative;
+  padding-left: 280px;
+}
+
+.tabby-tab label {
+	display: block;
+	box-sizing: border-box;
+	/* tab content must clear this */
+	height: 40px;
+	
+	padding: 10px;
+	text-align: center;
+	background: lightgrey;
+	cursor: pointer;
+	/* transition: background 0.5s ease; */
+	
+}
+.content_uptox{
+  text-align: center;
+}
+.tabby-tab label:hover {
+	background: whitesmoke;
+}
+
+.tabby-content {
+	position: absolute;
+	
+	left: 0; bottom: 0; right: 0;
+	/* clear the tab labels */
+		top: 50px; 
+	
+	padding: 30px;
+	border-radius: 0 0 8px 8px;
+	background: whitesmoke;
+	
+	transition: 
+		opacity 0.8s ease,
+		transform 0.8s ease;
+	
+	/* show/hide */
+		opacity: 0;
+		transform: scale(0.1);
+		transform-origin: top left;
+	
+}
+
+.tabby-content img {
+	float: left;
+	margin-right: 20px;
+	border-radius: 8px;
+  padding-right: 20px;
+}
+
+
+/* MAKE IT WORK ----- */
+
+.tabby-tab [type=radio] { display: none; }
+[type=radio]:checked ~ label {
+	background: whitesmoke;
+	z-index: 2;
+}
+
+[type=radio]:checked ~ label ~ .tabby-content {
+	z-index: 1;
+	
+	/* show/hide */
+		opacity: 1;
+		transform: scale(1);
+}
+
+/* BREAKPOINTS ----- */
+@media screen and (max-width: 768px) {
+	.tabs { min-height: 400px;}
+  .tabby-content p{
+    font-size: large;
+    font-weight: 400;
+    color: black
+  }
+  .tabby-content img{
+    /* width: 320px; */
+    padding: 30px;
+    /* padding-right: 15px; */
+  }
+  .tabby-tab label{
+    font-size: small;
+  }
+  .upstox_div h2{
+    font-size: large;
+    font-weight: 500;
+    color: black ;
+  }
+}
+
+@media screen and (max-width: 480px) {
+	.tabs { min-height: 500px; }
+	.tabby-tab label { 
+		height: 65px;
+    font-size: smaller;
+	}
+	.tabby-content { top: 60px; }
+	.tabby-content img {
+		float: none;
+    /* width: 350px; */
+    padding: 5px;
+    padding-bottom: 40px;    
+    
+		/* margin-right: 0; */
+		/* margin-bottom: 20px; */
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.tabs { min-height: 700px; }
+	.tabby-tab label { 
+		height: 55px;
+    font-size: small;
+	}
+	.tabby-content { top: 60px; }
+	.tabby-content img {
+		float: none;
+    padding: 5px;
+    padding-bottom: 40px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.tabs { min-height: 600px; }
+	.tabby-tab label { 
+		height: 55px;
+    font-size: x-small;
+	}
+	.tabby-content { top: 60px; }
+}
+
+@media screen and (max-width: 411px) {
+	.tabs { min-height: 620px; }
+	.tabby-tab label { 
+		height: 55px;
+    font-size: x-small;
+	}
+	.tabby-content { top: 60px; }
+}
