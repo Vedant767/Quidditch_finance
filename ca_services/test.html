@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/text.css" />
+  </head>
+  <body>
+    <div id="pay_div">
+      <!-- these radio buttons hold state of which card is in front and which toggle button is visible -->
+      <input type="radio" name="sushi-lunch" id="happy-radio" />
+      <input type="radio" name="sushi-lunch" id="lovers-radio" checked />
+
+      <div class="selector">
+        <label for="happy-radio" class="happy-card">
+          <h1>Bank Details</h1>
+          <ul>
+            <li>Acc Name - <b>Quidditch Finance</b></li>
+            <li>Acc Number - <b>50200059234230</b></li>
+            <li>IFSC - <b>HDFC0001797 </b></li>
+            <li>Acc Type - <b>Current/ Business Account.</b></li>
+          </ul>
+        </label>
+
+        <label for="lovers-radio" class="lovers-card">
+          <h1>UPI</h1>
+          <img
+            src="../images/WhatsApp Image 2021-09-05 at 3.06.13 PM.jpeg"
+            alt="QR code missing"
+            id="QR_code"
+          />
+        </label>
+
+        <label for="happy-radio" class="happy-pick">Bank Details</label>
+        <label for="lovers-radio" class="lovers-pick">UPI</label>
+      </div>
+    </div>
+  </body>
+</html>

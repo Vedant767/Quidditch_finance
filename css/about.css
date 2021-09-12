@@ -6,10 +6,14 @@
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
-  margin-bottom: 20px;
+  margin-bottom: 45px;
   text-align: center;
 }
 
+.icon-box {
+  margin-right: 20px;
+  margin-left: -20px;
+}
 .services .icon {
   display: flex;
   justify-content: center;
@@ -83,6 +87,11 @@
   }
   .img_about_us {
     border-radius: 50%;
+  }
+
+  .icon-box {
+    margin-right: 0px;
+    margin-left: 0px;
   }
 }
 

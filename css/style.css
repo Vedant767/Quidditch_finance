@@ -196,6 +196,17 @@ p {
   font-size: xx-large;
 }
 
+#before_payment {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.greetings {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: x-large;
+}
+
 /* testimonial section styles
 /* ========================================== */
 #testimonial .item {
@@ -526,10 +537,6 @@ footer a:hover {
     padding-bottom: 10px;
   }
 
-  .img-responsive {
-    width: 100%;
-    height: auto;
-  }
   .nav_bar {
     padding-top: 12%;
   }
@@ -604,11 +611,11 @@ footer a:hover {
 
   #about .about-des p {
     font-size: 17px;
-    line-height: 28px;
+    /* line-height: 28px; */
   }
 
   .about-des h1 {
-    line-height: 40px;
+    line-height: 31px;
   }
 
   /* .about-des #services_2{
@@ -683,7 +690,7 @@ footer a:hover {
 
   #home_second {
     width: auto;
-    height: 50px;
+    height: 60px;
   }
 
   #home_section_id {
@@ -699,6 +706,10 @@ footer a:hover {
     padding-top: 20px;
     width: 100%;
     padding-right: 40px;
+  }
+
+  .greetings {
+    font-size: large;
   }
 }
 
@@ -816,6 +827,7 @@ footer a:hover {
 
 .row_image_courses {
   display: flex;
+  padding-left: 55px;
 }
 
 .column_image_courses {
@@ -862,8 +874,7 @@ footer a:hover {
 
 @media screen and (max-width: 360px) {
   .row_image_courses {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 23px;
   }
   .column_image_courses {
     padding-bottom: 10px;

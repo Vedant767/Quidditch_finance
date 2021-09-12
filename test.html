@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <section id="contact" class="parallax-section">
+      <div class="greetings">
+        <b>
+          "Thanks for showing trust & interest to join our classes, Please do
+          fill this form and then go ahead & pay the fees"
+        </b>
+      </div>
+      <div class="container" id="before_payment">
+        <!-- Contact form section
+                ================================================== -->
+        <div class="col-md-6 col-sm-6 wow fadeInDown" data-wow-delay="0.6s">
+          <form action="./php/send-payment_info.php" method="post">
+            <div class="col-md-12 col-sm-12">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Name"
+                name="name"
+                id="name"
+              />
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email"
+                name="email"
+                id="email"
+              />
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Subject"
+                name="subject"
+              />
+              <textarea
+                name="message"
+                rows="8"
+                class="form-control"
+                id="message"
+                placeholder="Message"
+                message="message"
+              ></textarea>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <input
+                name="submit"
+                type="submit"
+                class="form-control"
+                id="submit"
+                value="Send a message"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

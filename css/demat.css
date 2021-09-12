@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -9,11 +11,16 @@
   margin: 0;
 } */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
-.container_demat{
+.container_demat {
   max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
@@ -25,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .table {
   width: 100%;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
 }
 
 .table-header {
@@ -41,10 +48,11 @@ h1, h2, h3, h4, h5, h6 {
   padding: 25px 0;
 }
 .table-row:nth-of-type(odd) {
-  background: #EEEEEE;
+  background: #eeeeee;
 }
 
-.table-data, .header__item {
+.table-data,
+.header__item {
   flex: 1 1 20%;
   text-align: center;
 }
@@ -77,184 +85,218 @@ h1, h2, h3, h4, h5, h6 {
   content: "(asc)";
 }
 
-.title_of_table{
-    align-items: center;
-    padding-left: 43%;
-    color: black;
+.title_of_table {
+  align-items: center;
+  padding-left: 43%;
+  color: black;
 }
 
-#demate_logo{
-  padding-left: 140px;
-  width: 900px;
-  height: 500px;
+.img-responsive {
+  padding-left: 138px;
+  margin-left: 125px;
+  margin-top: 26px;
+}
+
+#demate_logo1 {
+  width: 432px;
+  height: 227px;
 }
 
 @media (max-width: 768px) {
-#demate_logo{
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 60px;
-  width: 500px;
-  height: 200px;
+  #demate_logo1 {
+    padding-left: 80px;
+    width: 240px;
+    height: 165px;
+    margin-left: 10px;
+    margin-top: 7px;
+  }
+
+  #demate_logo2 {
+    padding-left: 23px;
+    width: 300px;
+    height: 182px;
+    margin-left: 7px;
+    margin-top: 0px;
+  }
+
+  .title_of_table {
+    padding-left: 32%;
+  }
+
+  .table-row {
+    padding: 15px 17px;
+  }
 }
-}
-
-
-
-
 
 .tabs {
-	position: relative;
-	display: flex;
-	min-height: 350px;
-	border-radius: 8px 8px 0 0;
-	overflow: hidden;
+  position: relative;
+  display: flex;
+  min-height: 350px;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
 }
 
 .tabby-tab {
-	flex: 1;
+  flex: 1;
 }
 
-#cont_upstox{
+#cont_upstox {
   position: relative;
   padding-left: 280px;
 }
 
 .tabby-tab label {
-	display: block;
-	box-sizing: border-box;
-	/* tab content must clear this */
-	height: 40px;
-	
-	padding: 10px;
-	text-align: center;
-	background: lightgrey;
-	cursor: pointer;
-	/* transition: background 0.5s ease; */
-	
+  display: block;
+  box-sizing: border-box;
+  /* tab content must clear this */
+  height: 40px;
+
+  padding: 10px;
+  text-align: center;
+  background: lightgrey;
+  cursor: pointer;
+  /* transition: background 0.5s ease; */
 }
-.content_uptox{
+.content_uptox {
   text-align: center;
 }
 .tabby-tab label:hover {
-	background: whitesmoke;
+  background: whitesmoke;
 }
 
 .tabby-content {
-	position: absolute;
-	
-	left: 0; bottom: 0; right: 0;
-	/* clear the tab labels */
-		top: 50px; 
-	
-	padding: 30px;
-	border-radius: 0 0 8px 8px;
-	background: whitesmoke;
-	
-	transition: 
-		opacity 0.8s ease,
-		transform 0.8s ease;
-	
-	/* show/hide */
-		opacity: 0;
-		transform: scale(0.1);
-		transform-origin: top left;
-	
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* clear the tab labels */
+  top: 50px;
+
+  padding: 30px;
+  border-radius: 0 0 8px 8px;
+  background: whitesmoke;
+
+  transition: opacity 0.8s ease, transform 0.8s ease;
+
+  /* show/hide */
+  opacity: 0;
+  transform: scale(0.1);
+  transform-origin: top left;
 }
 
 .tabby-content img {
-	float: left;
-	margin-right: 20px;
-	border-radius: 8px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 8px;
   padding-right: 20px;
 }
 
-
 /* MAKE IT WORK ----- */
 
-.tabby-tab [type=radio] { display: none; }
-[type=radio]:checked ~ label {
-	background: whitesmoke;
-	z-index: 2;
+.tabby-tab [type="radio"] {
+  display: none;
+}
+[type="radio"]:checked ~ label {
+  background: whitesmoke;
+  z-index: 2;
 }
 
-[type=radio]:checked ~ label ~ .tabby-content {
-	z-index: 1;
-	
-	/* show/hide */
-		opacity: 1;
-		transform: scale(1);
+[type="radio"]:checked ~ label ~ .tabby-content {
+  z-index: 1;
+
+  /* show/hide */
+  opacity: 1;
+  transform: scale(1);
 }
 
 /* BREAKPOINTS ----- */
 @media screen and (max-width: 768px) {
-	.tabs { min-height: 400px;}
-  .tabby-content p{
+  .tabs {
+    min-height: 400px;
+  }
+  .tabby-content p {
     font-size: large;
     font-weight: 400;
-    color: black
+    color: black;
   }
-  .tabby-content img{
+  .tabby-content img {
     /* width: 320px; */
     padding: 30px;
     /* padding-right: 15px; */
   }
-  .tabby-tab label{
+  .tabby-tab label {
     font-size: small;
   }
-  .upstox_div h2{
+  .upstox_div h2 {
     font-size: large;
     font-weight: 500;
-    color: black ;
+    color: black;
   }
 }
 
 @media screen and (max-width: 480px) {
-	.tabs { min-height: 500px; }
-	.tabby-tab label { 
-		height: 65px;
+  .tabs {
+    min-height: 500px;
+  }
+  .tabby-tab label {
+    height: 65px;
     font-size: smaller;
-	}
-	.tabby-content { top: 60px; }
-	.tabby-content img {
-		float: none;
+  }
+  .tabby-content {
+    top: 60px;
+  }
+  .tabby-content img {
+    float: none;
     /* width: 350px; */
     padding: 5px;
-    padding-bottom: 40px;    
-    
-		/* margin-right: 0; */
-		/* margin-bottom: 20px; */
-	}
+    padding-bottom: 40px;
+
+    /* margin-right: 0; */
+    /* margin-bottom: 20px; */
+  }
 }
 
 @media screen and (max-width: 540px) {
-	.tabs { min-height: 700px; }
-	.tabby-tab label { 
-		height: 55px;
+  .tabs {
+    min-height: 700px;
+  }
+  .tabby-tab label {
+    height: 55px;
     font-size: small;
-	}
-	.tabby-content { top: 60px; }
-	.tabby-content img {
-		float: none;
+  }
+  .tabby-content {
+    top: 60px;
+  }
+  .tabby-content img {
+    float: none;
     padding: 5px;
     padding-bottom: 40px;
-	}
+  }
 }
 
 @media screen and (max-width: 320px) {
-	.tabs { min-height: 600px; }
-	.tabby-tab label { 
-		height: 55px;
+  .tabs {
+    min-height: 600px;
+  }
+  .tabby-tab label {
+    height: 55px;
     font-size: x-small;
-	}
-	.tabby-content { top: 60px; }
+  }
+  .tabby-content {
+    top: 60px;
+  }
 }
 
 @media screen and (max-width: 411px) {
-	.tabs { min-height: 620px; }
-	.tabby-tab label { 
-		height: 55px;
+  .tabs {
+    min-height: 620px;
+  }
+  .tabby-tab label {
+    height: 55px;
     font-size: x-small;
-	}
-	.tabby-content { top: 60px; }
+  }
+  .tabby-content {
+    top: 60px;
+  }
 }
