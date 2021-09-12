@@ -695,7 +695,7 @@ footer a:hover {
 
   #home_section_id {
     font-size: large;
-    padding-bottom: 50px;
+    padding-bottom: 75px;
   }
 
   #service_1_id {
@@ -725,7 +725,7 @@ footer a:hover {
     font-size: large;
   }
   #home_section_id {
-    font-size: small;
+    font-size: large;
     padding-bottom: 50px;
   }
   img {
@@ -775,7 +775,7 @@ footer a:hover {
     display: block;
   }
   #home_section_id {
-    font-size: small;
+    font-size: large;
     padding-bottom: 50px;
   }
 }
