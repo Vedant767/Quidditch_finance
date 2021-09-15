@@ -725,7 +725,7 @@ footer a:hover {
   }
   #home_section_id {
     font-size: medium;
-    padding-bottom: 50px;
+    padding-bottom: 59px;
   }
   img {
     width: 100%;
@@ -774,7 +774,7 @@ footer a:hover {
     display: block;
   }
   #home_section_id {
-    font-size: medium;
+    /* font-size: small; */
     padding-bottom: 50px;
   }
 }
