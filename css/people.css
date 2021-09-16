@@ -60,12 +60,12 @@ a {
 }
 
 @media (max-width: 650px) {
-  .card {
+  /* .card {
     max-width: 266px;
-  }
+  } */
   .profile_1 {
-    width: 53vw;
-    height: 45vh;
+    width: 60vw;
+    height: 50vh;
   }
 
   .card p {
