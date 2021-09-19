@@ -114,7 +114,7 @@ main a:hover::after, main a:focus::after {
 
 html {
   min-height: 100vh;
-  font-family: sans-serif;
+  font-family: "Helvetica Neue", Helvetica, sans-serif
   line-height: 1.5;
   background: linear-gradient(45deg, #f1f0ef, #d1cac7);
   background-repeat: no-repeat;
