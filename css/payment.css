@@ -85,7 +85,7 @@ body .container .card .box .content h3 {
 
 body .container .card .box .content p {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: bold;
   color: black;
   z-index: 1;
   transition: 0.5s;
