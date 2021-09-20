@@ -65,6 +65,10 @@
   padding-bottom: 15px;
 }
 
+#card_2_bottom {
+  line-height: 25px;
+}
+
 @media (max-width: 650px) {
   /* .card {
     max-width: 266px;

@@ -39,7 +39,7 @@ body .container .card .box {
   left: 25px;
   right: 5px;
   bottom: 20px;
-  background: #2a2b2f;
+  background: #dbdbdb;
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -85,7 +85,7 @@ body .container .card .box .content h3 {
 body .container .card .box .content p {
   font-size: 1rem;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.9);
+  color: black;
   z-index: 1;
   transition: 0.5s;
 }
