@@ -123,8 +123,8 @@ body {
 }
 .blog-card .description .read-more a {
   color: #5ad67d;
-  display: inline-block;
-  position: relative;
+  /* display: inline-block;
+  position: relative; */
 }
 .blog-card .description .read-more a:after {
   content: "";
