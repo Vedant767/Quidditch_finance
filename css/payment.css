@@ -29,8 +29,9 @@ body .container .card {
   min-width: 320px;
   height: 440px;
   border-radius: 15px;
-  margin: 30px;
+  /* margin: 30px; */
   transition: 0.5s;
+  margin-right: 14px;
 }
 
 body .container .card .box {
