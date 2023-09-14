@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/animate.min.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <section id="contact" class="parallax-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 wow fadeInDown" data-wow-delay="0.6s">
+            <form action="../php/send-payment_info.php" method="post">
+              <div class="col-md-12 col-sm-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Name"
+                  name="name"
+                  id="name"
+                  required
+                />
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email"
+                  name="email"
+                  id="email"
+                  required
+                />
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder="Contact number"
+                  name="phone_number"
+                  id="phone_number"
+                  required
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Subject"
+                  name="subject"
+                  required
+                />
+                <textarea
+                  name="message"
+                  rows="8"
+                  class="form-control"
+                  id="message"
+                  placeholder="Message"
+                  message="message"
+                  required
+                ></textarea>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <input
+                  name="submit"
+                  type="submit"
+                  class="form-control"
+                  id="submit"
+                  value="Register"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
